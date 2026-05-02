@@ -23,7 +23,7 @@ jobs:
           mkdir -p saida_build
           echo "Relatório 1 gerado com sucesso" > saida_build/relatorio1.txt
           echo "Relatório 2 gerado com sucesso" > saida_build/relatorio2.txt
-          ls -R   # 🔥 garante que existe antes do upload
+          ls -R 
 
       - name: Upload de artefatos
         uses: actions/upload-artifact@v4
