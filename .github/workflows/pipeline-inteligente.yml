@@ -23,12 +23,13 @@ jobs:
           mkdir -p saida_build
           echo "Relatório 1 gerado com sucesso" > saida_build/relatorio1.txt
           echo "Relatório 2 gerado com sucesso" > saida_build/relatorio2.txt
+          ls -R   # 🔥 garante que existe antes do upload
 
       - name: Upload de artefatos
         uses: actions/upload-artifact@v4
         with:
           name: meus-relatorios-oficiais
-          path: saida_build/*   # 🔥 ajuste aqui
+          path: ./saida_build   # 🔥 caminho explícito
 
   job_auditoria:
     runs-on: ubuntu-latest
@@ -39,7 +40,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: meus-relatorios-oficiais
-          path: saida_build
 
       - name: Listar estrutura
         run: ls -R
