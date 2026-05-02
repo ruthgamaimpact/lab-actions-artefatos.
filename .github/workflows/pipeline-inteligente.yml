@@ -39,6 +39,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: meus-relatorios-oficiais
+          path: saida_build   # 🔥 CORREÇÃO AQUI
 
       - name: Listar estrutura
         run: ls -R
