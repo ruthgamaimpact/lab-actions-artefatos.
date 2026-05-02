@@ -43,6 +43,6 @@ jobs:
 
       - name: Listar estrutura
         run: ls -R
-
-      - name: Exibir conteúdo do relatório
-        run: cat saida_build/relatorio1.txt
+        
+        - name: Exibir conteúdo do relatório
+        run: cat relatorio1.txt
