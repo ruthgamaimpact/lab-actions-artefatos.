@@ -1,0 +1,3 @@
+Teste 1 (Obrigatório falhar): Faça um commit de qualquer arquivo
+diretamente na branch main e dê push. O que deve acontecer: Nada. O
+GitHub Actions deve ignorar.
